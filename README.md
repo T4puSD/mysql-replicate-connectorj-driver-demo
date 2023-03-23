@@ -24,6 +24,8 @@ in the `application.properties` file
 
 ```properties
 spring.datasource.url=jdbc:mysql:replication://[primary-db-host]:[primary-db-port],[secondary-db-host]:[secondary-db-port],[other-seconday-hosts-and-ports....]/mydb
+spring.datasource.username=[common-username]
+spring.datasource.password=[common-user-password]
 ```
 We can add as many replica read only secondary in our connection string as we want. The driver will auto load balance 
 between them.
