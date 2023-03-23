@@ -23,7 +23,7 @@ We just need to declare the proper mysql url for the replicate driver
 in the `application.properties` file
 
 ```properties
-spring.datasource.url=jdbc:mysql:replication://[primary-db-host]:[primary-db-port],[secondary-db-host]:[secondary-db-port],[other-seconday-hosts-and-ports....]/mydb
+spring.datasource.url=jdbc:mysql:replication://[primary-db-host]:[primary-db-port],[secondary-db-host]:[secondary-db-port],[other-seconday-hosts-and-ports....]/[database-name]
 spring.datasource.username=[common-username]
 spring.datasource.password=[common-user-password]
 ```
